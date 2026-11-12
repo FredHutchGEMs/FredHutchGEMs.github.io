@@ -13,20 +13,3 @@ Our team focuses specifically on [genomic data science](https://www.genome.gov/a
 knitr::include_graphics("resources/images/gems_concept.png")
 ```
 
-
-
-### **Our Team**
-
-* Rosa Alcazar (Clovis CC)
-* Carolina Chianelli (El Paso CC)
-* Stephanie Coffman (Clovis CC)
-* Karla Fuller (Guttman CC)
-* [Ava Hoffman](https://avahoffman.com) (Fred Hutch)
-* Elizabeth Humphries (Fred Hutch)
-* Andrew Lee (Georgetown)
-* Allison Peters (Fred Hutch)
-
-
-### **Contact Us**
-
-If you have questions please contact: gems **at** fredhutch **dot** org
