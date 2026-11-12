@@ -23,7 +23,7 @@ knitr::include_graphics("resources/images/gems_concept.png")
 ### Explore GEMs modules
 :::
 
-[Our modules](projects.qmd){.project-button}
+[Our modules](modules.qmd){.project-button}
 
 ::::
 
