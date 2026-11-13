@@ -1,0 +1,15 @@
+{
+  "hash": "ce37ee17982097bba2c9371ae8048680",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\noutput:\n  html_document\n---\n\n![](assets/GEMs-v2-transparent.png)\n\n### **About**\n\nWelcome! This is the main website for the Genomics Education Modules (GEMs) Program, a collaborative project between [Fred Hutch Cancer Center](https://www.fredhutch.org/en.html), [Clovis Community College](https://www.cloviscollege.edu/), [Guttman Community College](https://guttman.cuny.edu/), [El Paso Community College](https://www.epcc.edu/), and [Georgetown University](https://www.georgetown.edu/).\n\nOur team focuses specifically on [genomic data science](https://www.genome.gov/about-genomics/fact-sheets/Genomic-Data-Science), an interdisciplinary field that combines both biology and computational skills. Here, you will be able to find links to our modules to use in the classroom or workplace.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](resources/images/gems_concept.png){fig-align='center' fig-alt='GEMs includes data driven modules, in person learn-a-thon, authentic support, and scalable materials, surrounded by a system of feedback and iteration.' width=60%}\n:::\n:::\n\n\n:::: {.project-callout}\n\n![](assets/icons/laptop-and-light-bulb.png)\n\n::: {.project-copy}\n### Explore GEMs modules\n:::\n\n[Our modules](modules.qmd){.project-button}\n\n::::\n\n<br>\n\n:::: {.project-callout}\n\n![](assets/icons/responsibility-team.png)\n\n::: {.project-copy}\n### Get to know us\n\nMeet the team behind GEMs.\n:::\n\n[Our team](team.qmd){.project-button}\n\n::::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
