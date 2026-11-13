@@ -1,0 +1,14 @@
+---
+title: "**Team**"
+output:
+  html_document
+---
+
+* Rosa Alcazar (Clovis CC)
+* Carolina Chianelli (El Paso CC)
+* Stephanie Coffman (Clovis CC)
+* Karla Fuller (Guttman CC)
+* [Ava Hoffman](https://avahoffman.com) (Fred Hutch)
+* Elizabeth Humphries (Fred Hutch)
+* Andrew Lee (Georgetown)
+* Allison Peters (Fred Hutch)

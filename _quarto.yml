@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+ #   - "!module/*" # this line avoids rendering content in the module folder 
   output-dir: docs
   
 website:
@@ -14,6 +17,10 @@ website:
       href: resources.qmd
     - text: Share Your Input
       href: input.qmd
+    - text: Team
+      href: team.qmd
+    - text: Contact
+      href: contact.qmd
   google-analytics: "G-XMR6CQ1L12"
   site-url: https://genomicseducation.org
   repo-url: https://github.com/fhdsl/GEMs
@@ -28,4 +35,6 @@ format:
     css: styles.css
     toc: true
     link-external-newwindow: true
+    include-in-header:
+      - file: resources/header.html
       
