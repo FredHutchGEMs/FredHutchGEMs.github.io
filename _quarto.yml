@@ -35,4 +35,6 @@ format:
     css: styles.css
     toc: true
     link-external-newwindow: true
+    include-in-header:
+      - file: resources/header.html
       
