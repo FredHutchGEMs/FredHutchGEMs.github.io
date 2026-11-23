@@ -8,7 +8,6 @@ GEMs is a collection of short, experiential activities built for developing biol
 
 ```{r load-libraries, message = FALSE, warning = FALSE, echo = FALSE}
 library(tidyverse)
-library(tibble)
 library(DT)
 ```
 
