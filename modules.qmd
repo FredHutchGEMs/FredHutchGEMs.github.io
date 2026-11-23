@@ -4,46 +4,102 @@ output:
   html_document
 ---
 
-## Short Modules
+GEMs is a collection of short, experiential activities built for developing biology and computational skills. 
 
-These materials are under 1 hour.
+```{r load-libraries, message = FALSE, warning = FALSE, echo = FALSE}
+library(tidyverse)
+library(tibble)
+library(DT)
+```
 
-- [All of Us: Understanding Ethics](module/AOU_ethics.html)
+```{r make-data-frame, echo = FALSE}
+contents <- tibble(module = character(),
+                   length = character(),
+                   topics = character(), 
+                   description = character(),
+                   classes = character()) 
+# Add short modules
+contents <- contents %>% 
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/AOU_ethics.html">"All of Us: Understanding Ethics"</a>'),
+          length = "<1 hour",
+          topics = "Ethics, Genomics",
+          description = "This module uses the All of Us Data Browser to encourage critical thinking on ehtical concepts in human genomics",
+          classes = "") %>% # Fill in classes
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/dna_forensics.html">"Forensic Case Files: DNA Barcoding"</a>'),
+          length = "<1 hour",
+          topics = "DNA Barcoding, Species Identification",
+          description = "This activity explores forensic uses of DNA barcoding.",
+          classes = "") %>% # Fill in classes
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/AI_genomics.html">"Gut Check: AI and Genomic Literature"</a>'),
+          length = "<1 hour",
+          topics = "AI, Ethics, Genomics",
+          description = "This short activity focused on the critical approach scientists must use to evaluate the validity of information, including information provided by Large Language Model (LLM) chat sources.",
+          classes = "") # Fill in classes
+# Add lab-period modules
+contents <- contents %>% 
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/database_detectives.html">"Database Detectives: Exploring Public Genomic Databases"</a>'),
+          length = "1-3 hours",
+          topics = "Curated Databases, Homologs and Orthologs, Model Organisms, Gene Ontology, Genome Assembly", 
+          description = "This activity guides students through using publicly-available genomics databases.",
+          classes = "") %>% # Fill in classes
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/dna_barcoding.html">"DNA Barcoding: Forensic Investigators"</a>'),
+          length = "1.5 hours",
+          topics = "DNA Barcoding, Curated Databases, Species Identification", 
+          description = "This activity explores forensic uses of DNA barcoding and DNA reference datasets.",
+          classes = "") %>% # Fill in classes
+  add_row(module = "DNA Fingerprinting (coming soon!)", 
+          length = "1.5-3 hours",
+          topics = "", 
+          description = "",
+          classes = "") %>% # Fill in classes
+  add_row(module = "Escape Room: All of Us Research Bench (coming soon!)",
+          length = "1.5-3 hours",
+          topics = "", 
+          description = "",
+          classes = "") %>% # Fill in classes
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/epigenetics_explorer.html">"Epigenetics Explorer: Differentiating Cell Types"</a>'),
+          length = "1 hour",
+          topics = "Epigenetics", # Fill in additional topics 
+          description = "This activity teaches students to use the UCSC Genome Browser to explore differences in epigenetic signals across cell types.",
+          classes = "") %>% # Fill in classes
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/family_markers.html">"Family Markers: Using Multiply-Affected Families to Identify Risk Genes"</a>'),
+          length = "1.5-2 hours",
+          topics = "Hardy-Weinberg, Drift, Natural Slection", 
+          description = "This activity teaches students to interpret pedigree information and use bioinformatics tools (R) to build pedigrees for tracking disease traits in families.",
+          classes = "") %>% # Fill in classes
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/pop_gen_hwe.html">"Population Genetics: Fish Pond Simulator"</a>'),
+          length = "1.5-3 hours",
+          topics = "Bipolar Disorder, Genetics, Pedigree", 
+          description = "This module uses the PopGen Fishbowl simulator to model natural selection and genetic drift, as well as explore whether populations are at Hardy-Weinberg equilibrium.",
+          classes = "Introductory Biology, Evolution") %>%
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/genomic_med_prs.html">"Genomic Medicine: Polygenic Risk Score Calculation"</a>'),
+          length = "1.5-3 hours",
+          topics = "PRS Calculation, Genetic Testing, Ancestry", 
+          description = "This activity will walk through how to use an online polygenic risk score (PRS) calculator, as well as how to interpret the outcome.",
+          classes = "Introductory Biology, Biology for Non-Majors")
+# Add research modules
+contents <- contents %>%
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/mouse_gutbrain_de.html">"Differential Expression and the Mouse Gut-Brain Axis"</a>'),
+          length = "1-2 hours",
+          topics = "Differential Expression, Gut-brain Axis, Neurodevelopmental disorders, Neurodegenerative Disorders", 
+          description = "This module introduces students to differential expression analyses using the R programming language.",
+          classes = "") # Fill in classes
+# Add other modules
+contents <- contents %>%
+  add_row(module = paste0('<a href=\"https://genomicseducation.org/module/exam_phys.html">"Exam Physiology: Wearable Data and Stress"</a>'),
+          length = "1.5-2.5 hours",
+          topics = "Correlation, Physiological Data, Stress-monitoring Devices", 
+          description = "This module introduces data analysis of physiology data.",
+          classes = "") # Fill in classes
 
-- [Forensic Case Files: DNA Barcoding](module/dna_forensics.html)
-
-- [Gut Check: AI and Genomic Literature](module/AI_genomics.html)
-
-## Lab-Period Modules
-
-These modules are intended to fill a lab period, about 1.5 - 3 hours.
-
-- [Database Detectives: Exploring Public Genomic Databases](module/database_detectives.html)
-
-- [DNA Barcoding: Forensic Investigators](module/dna_barcoding.html)
-
-- DNA Fingerprinting (_coming soon!_)
-
-- Escape Room: All of Us Research Bench (_coming soon!_)
-
-- [Epigenetics Explorer: Differentiating Cell Types](module/epigenetics_explorer.html)
-
-- [Family Markers: Using Multiply-Affected Families to Identify Risk Genes](module/family_markers.html)
-
-- [Genomic Medicine: Polygenic Risk Score Calculation](module/genomic_med_prs.html)
-
-- [Population Genetics: Fish Pond Simulator](module/pop_gen_hwe.html)
-
-## Research Modules
-
-These modules can be run as part of a miniCURE with the C-MOOR project or as a single, standalone lab activity.
-
-- [Differential Expression and the Mouse Gut-Brain Axis](module/mouse_gutbrain_de.html)
-
-
-## Other Modules
-
-These modules are not strictly part of GEMs, but were created by our group and others.
-
-- [Exam Physiology: Wearable Data and Stress](module/exam_phys.html)
-
+# Order modules
+contents <- contents %>%
+  mutate(module_sort = str_extract(module, '(?<=>)[^<]+(?=</a>)')) %>%
+  arrange(length, module_sort) %>%
+  select(-module_sort)
+# Make DataTable
+datatable(contents,
+          colnames = c("Module", "Length", "Topics Covered:", "Desciption", "Classes Suited for:"),
+          filter = "top", options = list(pageLength = 5, autoWidth = TRUE),
+          escape = FALSE)
+```
