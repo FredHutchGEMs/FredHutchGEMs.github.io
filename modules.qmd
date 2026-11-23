@@ -94,9 +94,12 @@ contents <- contents %>%
 
 # Order modules
 contents <- contents %>%
-  mutate(module_sort = str_extract(module, '(?<=>)[^<]+(?=</a>)')) %>%
+  mutate(module_sort = str_extract(module, '(?<=">)[^<]+(?=</a>)') %>%
+           str_remove_all('^"|"$') %>%
+           coalesce(module)) %>%
   arrange(length, module_sort) %>%
   select(-module_sort)
+
 # Make DataTable
 datatable(contents,
           colnames = c("Module", "Length", "Topics Covered:", "Desciption", "Classes Suited for:"),
