@@ -2,7 +2,7 @@ project:
   type: website
   render:
     - "*.qmd"
- #   - "!module/*" # this line avoids rendering content in the module folder 
+    - "!module/*" # this line avoids rendering content in the module folder 
   output-dir: docs
   
 website:
