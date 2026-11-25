@@ -101,7 +101,7 @@ contents <- contents %>%
 
 # Make DataTable
 datatable(contents,
-          colnames = c("Module", "Length", "Topics Covered:", "Desciption", "Classes Suited for:"),
+          colnames = c("Module", "Estimated time", "Topics", "Description", "Classes suited for"),
           filter = "top", options = list(pageLength = 5, autoWidth = TRUE),
           escape = FALSE)
 ```
