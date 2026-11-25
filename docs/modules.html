@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d06f9642b2e57c86d8476caa0ca57c61.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ce750ca0d8caffb6ed8af5dbc835a5df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,6 +77,19 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-XMR6CQ1L12', { 'anonymize_ip': true});
 </script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
  <!--- go to https://favicon.io/favicon-converter/ to upload an image to make a new favicon.io. You will need to replace the current favicon.io image with the one in the downloaded directory from the website. The current image is in the resources/images/ directory --->
 
@@ -136,17 +149,8 @@ gtag('config', 'G-XMR6CQ1L12', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#short-modules" id="toc-short-modules" class="nav-link active" data-scroll-target="#short-modules">Short Modules</a></li>
-  <li><a href="#lab-period-modules" id="toc-lab-period-modules" class="nav-link" data-scroll-target="#lab-period-modules">Lab-Period Modules</a></li>
-  <li><a href="#research-modules" id="toc-research-modules" class="nav-link" data-scroll-target="#research-modules">Research Modules</a></li>
-  <li><a href="#other-modules" id="toc-other-modules" class="nav-link" data-scroll-target="#other-modules">Other Modules</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -170,45 +174,15 @@ gtag('config', 'G-XMR6CQ1L12', { 'anonymize_ip': true});
 </header>
 
 
-<section id="short-modules" class="level2">
-<h2 class="anchored" data-anchor-id="short-modules">Short Modules</h2>
-<p>These materials are under 1 hour.</p>
-<ul>
-<li><p><a href="module/AOU_ethics.html">All of Us: Understanding Ethics</a></p></li>
-<li><p><a href="module/dna_forensics.html">Forensic Case Files: DNA Barcoding</a></p></li>
-<li><p><a href="module/AI_genomics.html">Gut Check: AI and Genomic Literature</a></p></li>
-</ul>
-</section>
-<section id="lab-period-modules" class="level2">
-<h2 class="anchored" data-anchor-id="lab-period-modules">Lab-Period Modules</h2>
-<p>These modules are intended to fill a lab period, about 1.5 - 3 hours.</p>
-<ul>
-<li><p><a href="module/database_detectives.html">Database Detectives: Exploring Public Genomic Databases</a></p></li>
-<li><p><a href="module/dna_barcoding.html">DNA Barcoding: Forensic Investigators</a></p></li>
-<li><p>DNA Fingerprinting (<em>coming soon!</em>)</p></li>
-<li><p>Escape Room: All of Us Research Bench (<em>coming soon!</em>)</p></li>
-<li><p><a href="module/epigenetics_explorer.html">Epigenetics Explorer: Differentiating Cell Types</a></p></li>
-<li><p><a href="module/family_markers.html">Family Markers: Using Multiply-Affected Families to Identify Risk Genes</a></p></li>
-<li><p><a href="module/genomic_med_prs.html">Genomic Medicine: Polygenic Risk Score Calculation</a></p></li>
-<li><p><a href="module/pop_gen_hwe.html">Population Genetics: Fish Pond Simulator</a></p></li>
-</ul>
-</section>
-<section id="research-modules" class="level2">
-<h2 class="anchored" data-anchor-id="research-modules">Research Modules</h2>
-<p>These modules can be run as part of a miniCURE with the C-MOOR project or as a single, standalone lab activity.</p>
-<ul>
-<li><a href="module/mouse_gutbrain_de.html">Differential Expression and the Mouse Gut-Brain Axis</a></li>
-</ul>
-</section>
-<section id="other-modules" class="level2">
-<h2 class="anchored" data-anchor-id="other-modules">Other Modules</h2>
-<p>These modules are not strictly part of GEMs, but were created by our group and others.</p>
-<ul>
-<li><a href="module/exam_phys.html">Exam Physiology: Wearable Data and Stress</a></li>
-</ul>
+<p>GEMs is a collection of short, experiential activities built for developing biology and computational skills.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-70ace8886e139794e2bd" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-70ace8886e139794e2bd">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"30\" data-max=\"120\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["<a href=\"https://genomicseducation.org/module/dna_forensics.html\">\"Forensic Case Files: DNA Barcoding\"<\/a>","<a href=\"https://genomicseducation.org/module/AOU_ethics.html\">\"All of Us: Understanding Ethics\"<\/a>","<a href=\"https://genomicseducation.org/module/AI_genomics.html\">\"Gut Check: AI and Genomic Literature\"<\/a>","<a href=\"https://genomicseducation.org/module/epigenetics_explorer.html\">\"Epigenetics Explorer: Differentiating Cell Types\"<\/a>","<a href=\"https://genomicseducation.org/module/mouse_gutbrain_de.html\">\"Differential Expression and the Mouse Gut-Brain Axis\"<\/a>","<a href=\"https://genomicseducation.org/module/dna_barcoding.html\">\"DNA Barcoding: Forensic Investigators\"<\/a>","<a href=\"https://genomicseducation.org/module/family_markers.html\">\"Family Markers: Using Multiply-Affected Families to Identify Risk Genes\"<\/a>","<a href=\"https://genomicseducation.org/module/genomic_med_prs.html\">\"Genomic Medicine: Polygenic Risk Score Calculation\"<\/a>","<a href=\"https://genomicseducation.org/module/pop_gen_hwe.html\">\"Population Genetics: Fish Pond Simulator\"<\/a>","<a href=\"https://genomicseducation.org/module/database_detectives.html\">\"Database Detectives: Exploring Public Genomic Databases\"<\/a>","<a href=\"https://genomicseducation.org/module/exam_phys.html\">\"Exam Physiology: Wearable Data and Stress\"<\/a>","DNA Fingerprinting (coming soon!)","Escape Room: All of Us Research Bench (coming soon!)"],["30 minutes","45 minutes","45 minutes","1 hour","1.5 hours","1.5 hours","1.5 hours","1.5 hours","1.5 hours","2 hours","2 hours",null,null],["DNA Barcoding, Species Identification","Ethics, Genomics","AI, Ethics, Genomics","Epigenetics","Differential Expression, Gut-brain Axis, Neurodevelopmental disorders, Neurodegenerative Disorders","DNA Barcoding, Curated Databases, Species Identification","Hardy-Weinberg, Drift, Natural Slection","PRS Calculation, Genetic Testing, Ancestry","Bipolar Disorder, Genetics, Pedigree","Curated Databases, Homologs and Orthologs, Model Organisms, Gene Ontology, Genome Assembly","Correlation, Physiological Data, Stress-monitoring Devices",null,null],["This activity explores forensic uses of DNA barcoding.","This module uses the All of Us Data Browser to encourage critical thinking on ehtical concepts in human genomics","This short activity focused on the critical approach scientists must use to evaluate the validity of information, including information provided by Large Language Model (LLM) chat sources.","This activity teaches students to use the UCSC Genome Browser to explore differences in epigenetic signals across cell types.","This module introduces students to differential expression analyses using the R programming language.","This activity explores forensic uses of DNA barcoding and DNA reference datasets.","This activity teaches students to interpret pedigree information and use bioinformatics tools (R) to build pedigrees for tracking disease traits in families.","This activity will walk through how to use an online polygenic risk score (PRS) calculator, as well as how to interpret the outcome.","This module uses the PopGen Fishbowl simulator to model natural selection and genetic drift, as well as explore whether populations are at Hardy-Weinberg equilibrium.","This activity guides students through using publicly-available genomics databases.","This module introduces data analysis of physiology data.",null,null],[null,null,null,null,null,null,null,"Introductory Biology, Biology for Non-Majors","Introductory Biology, Evolution",null,null,null,null],[30,45,45,60,90,90,90,90,90,120,120,null,null],["forensic case files: dna barcoding","all of us: understanding ethics","gut check: ai and genomic literature","epigenetics explorer: differentiating cell types","differential expression and the mouse gut-brain axis","dna barcoding: forensic investigators","family markers: using multiply-affected families to identify risk genes","genomic medicine: polygenic risk score calculation","population genetics: fish pond simulator","database detectives: exploring public genomic databases","exam physiology: wearable data and stress","dna fingerprinting (coming soon!)","escape room: all of us research bench (coming soon!)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Module<\/th>\n      <th>Estimated time<\/th>\n      <th>Topics<\/th>\n      <th>Description<\/th>\n      <th>Classes suited for<\/th>\n      <th><\/th>\n      <th><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"autoWidth":true,"columnDefs":[{"orderData":6,"targets":0},{"orderData":5,"targets":1},{"visible":false,"targets":[5,6]},{"className":"dt-right","targets":5},{"name":"module","targets":0},{"name":"length","targets":1},{"name":"topics","targets":2},{"name":"description","targets":3},{"name":"classes","targets":4},{"name":"length_sort","targets":5},{"name":"module_sort","targets":6}],"order":[],"orderClasses":false,"orderCellsTop":true,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'85%'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'85%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'85%'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'85%'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'85%'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'font-size':'85%'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'font-size':'85%'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

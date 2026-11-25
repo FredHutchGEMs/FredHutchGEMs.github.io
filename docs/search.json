@@ -11,35 +11,7 @@
     "href": "modules.html",
     "title": "Modules",
     "section": "",
-    "text": "These materials are under 1 hour.\n\nAll of Us: Understanding Ethics\nForensic Case Files: DNA Barcoding\nGut Check: AI and Genomic Literature"
-  },
-  {
-    "objectID": "modules.html#short-modules",
-    "href": "modules.html#short-modules",
-    "title": "Modules",
-    "section": "",
-    "text": "These materials are under 1 hour.\n\nAll of Us: Understanding Ethics\nForensic Case Files: DNA Barcoding\nGut Check: AI and Genomic Literature"
-  },
-  {
-    "objectID": "modules.html#lab-period-modules",
-    "href": "modules.html#lab-period-modules",
-    "title": "Modules",
-    "section": "Lab-Period Modules",
-    "text": "Lab-Period Modules\nThese modules are intended to fill a lab period, about 1.5 - 3 hours.\n\nDatabase Detectives: Exploring Public Genomic Databases\nDNA Barcoding: Forensic Investigators\nDNA Fingerprinting (coming soon!)\nEscape Room: All of Us Research Bench (coming soon!)\nEpigenetics Explorer: Differentiating Cell Types\nFamily Markers: Using Multiply-Affected Families to Identify Risk Genes\nGenomic Medicine: Polygenic Risk Score Calculation\nPopulation Genetics: Fish Pond Simulator"
-  },
-  {
-    "objectID": "modules.html#research-modules",
-    "href": "modules.html#research-modules",
-    "title": "Modules",
-    "section": "Research Modules",
-    "text": "Research Modules\nThese modules can be run as part of a miniCURE with the C-MOOR project or as a single, standalone lab activity.\n\nDifferential Expression and the Mouse Gut-Brain Axis"
-  },
-  {
-    "objectID": "modules.html#other-modules",
-    "href": "modules.html#other-modules",
-    "title": "Modules",
-    "section": "Other Modules",
-    "text": "Other Modules\nThese modules are not strictly part of GEMs, but were created by our group and others.\n\nExam Physiology: Wearable Data and Stress"
+    "text": "GEMs is a collection of short, experiential activities built for developing biology and computational skills."
   },
   {
     "objectID": "module/prs_uses_and_regulations_questions_only.html",
