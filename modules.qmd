@@ -98,7 +98,8 @@ contents <- contents %>%
             str_detect(length, "hour") ~ 60 * readr::parse_number(length)),
          module_sort = str_extract(module, '(?<=">)[^<]+(?=</a>)') %>%
            str_remove_all('^"|"$') %>%
-           coalesce(module)) %>%
+           coalesce(module) %>%
+           tolower) %>%
   arrange(length_sort, module_sort) 
 
 # Make DataTable
